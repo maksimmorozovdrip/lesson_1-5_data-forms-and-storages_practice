@@ -18,7 +18,8 @@ const topicSelect = document.querySelector("#workshop-topic")
 
 // БЛОКИ 1–4
 // 1.2: замените событие click на submit.
-form.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
   // 1.3: первой строкой остановите стандартное действие формы.
 
   console.log("1.2. Получено событие", event.type)
