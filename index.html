@@ -58,6 +58,8 @@
               type="text"
               placeholder="Например, Анна"
               autocomplete="name"
+              minlength="2"
+              required
             />
             <span class="field__hint">Минимальная длина появится в блоке 2.</span>
           </div>
@@ -67,16 +69,17 @@
             <input
               id="participant-email"
               name="email"
-              type="text"
               placeholder="anna@example.com"
               autocomplete="email"
+              required
+              type="email"
             />
             <span class="field__hint">Тип поля нужно уточнить во время практики.</span>
           </div>
 
           <div class="field">
             <label for="workshop-topic">Тема мастерской</label>
-            <select id="workshop-topic" name="topic">
+            <select id="workshop-topic" name="topic" required>
               <option value="">Выберите тему</option>
               <option value="Городская мастерская">Городская мастерская</option>
               <option value="Доступные интерфейсы">Доступные интерфейсы</option>
@@ -100,7 +103,7 @@
           </div>
 
           <div class="result-message" id="result" aria-live="polite">
-            Пока заявка не отправлена
+            Форма обработана без перезагрузки
           </div>
 
           <dl class="storage-state">
